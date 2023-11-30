@@ -70,7 +70,7 @@ export interface SystemConfig {
     roleArn?: string;
   };
   llms: {
-    sagemaker: SupportedSageMakerModels[];
+    sagemaker?: SupportedSageMakerModels[];
   };
   rag: {
     enabled: boolean;

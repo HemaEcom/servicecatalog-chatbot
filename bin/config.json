@@ -1,12 +1,12 @@
 {
-  "prefix": "NV",
-  "vpc": {
-    "vpcId": "vpc-0cb4a7b7d73269d81",
-    "createVpcEndpoints": true
-  },
+  "prefix": "stefan",
   "bedrock": {
     "enabled": true,
     "region": "us-east-1"
+  },
+  "vpc": {
+    "vpcId": "vpc-0cb4a7b7d73269d81",
+    "createVpcEndpoints": true
   },
   "llms": {
     "sagemaker": []
@@ -15,7 +15,7 @@
     "enabled": true,
     "engines": {
       "aurora": {
-        "enabled": true
+        "enabled": false
       },
       "opensearch": {
         "enabled": true
@@ -39,6 +39,11 @@
         "name": "amazon.titan-embed-text-v1",
         "dimensions": 1536,
         "default": true
+      },
+      {
+        "provider": "cohere",
+        "name": "embed-english-v3",
+        "dimensions": 1024
       }
     ],
     "crossEncoderModels": [
@@ -47,6 +52,11 @@
         "name": "amazon.titan-embed-text-v1",
         "dimensions": 1536,
         "default": true
+      },
+      {
+        "provider": "cohere",
+        "name": "embed-english-v3",
+        "dimensions": 1024
       }
     ]
   }
