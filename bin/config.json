@@ -6,7 +6,7 @@
   },
   "vpc": {
     "vpcId": "vpc-0cb4a7b7d73269d81",
-    "createVpcEndpoints": true
+    "createVpcEndpoints": false
   },
   "llms": {
     "sagemaker": []
@@ -18,7 +18,7 @@
         "enabled": false
       },
       "opensearch": {
-        "enabled": true
+        "enabled": false
       },
       "kendra": {
         "enabled": true,
