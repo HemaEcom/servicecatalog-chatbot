@@ -1,0 +1,53 @@
+{
+  "prefix": "NV",
+  "vpc": {
+    "vpcId": "vpc-0cb4a7b7d73269d81",
+    "createVpcEndpoints": true
+  },
+  "bedrock": {
+    "enabled": true,
+    "region": "us-east-1"
+  },
+  "llms": {
+    "sagemaker": []
+  },
+  "rag": {
+    "enabled": true,
+    "engines": {
+      "aurora": {
+        "enabled": true
+      },
+      "opensearch": {
+        "enabled": true
+      },
+      "kendra": {
+        "enabled": true,
+        "createIndex": false,
+        "external": [
+          {
+            "enabled": true,
+            "name": "test-index",
+            "kendraId": "b286ab1d-0639-4df9-837f-8f05b8c35bcb",
+            "region": "eu-west-1"
+          }
+        ]
+      }
+    },
+    "embeddingsModels": [
+      {
+        "provider": "bedrock",
+        "name": "amazon.titan-embed-text-v1",
+        "dimensions": 1536,
+        "default": true
+      }
+    ],
+    "crossEncoderModels": [
+      {
+        "provider": "bedrock",
+        "name": "amazon.titan-embed-text-v1",
+        "dimensions": 1536,
+        "default": true
+      }
+    ]
+  }
+}
