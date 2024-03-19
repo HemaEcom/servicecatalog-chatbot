@@ -1,8 +1,8 @@
 {
-  "prefix": "stefan",
+  "prefix": "test",
   "bedrock": {
     "enabled": true,
-    "region": "us-east-1"
+    "region": "eu-central-1"
   },
   "vpc": {
     "vpcId": "vpc-0cb4a7b7d73269d81",
@@ -27,7 +27,7 @@
           {
             "enabled": true,
             "name": "test-index",
-            "kendraId": "b286ab1d-0639-4df9-837f-8f05b8c35bcb",
+            "kendraId": "16706f60-34ab-4a86-9ef9-1c8a76d0834b",
             "region": "eu-west-1"
           }
         ]
