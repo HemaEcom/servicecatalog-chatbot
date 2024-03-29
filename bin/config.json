@@ -5,7 +5,7 @@
     "region": "eu-central-1"
   },
   "vpc": {
-    "vpcId": "vpc-0cb4a7b7d73269d81",
+    "vpcId": "vpc-0c3f43e66a11828d9",
     "createVpcEndpoints": false
   },
   "llms": {
@@ -27,7 +27,7 @@
           {
             "enabled": true,
             "name": "test-index",
-            "kendraId": "16706f60-34ab-4a86-9ef9-1c8a76d0834b",
+            "kendraId": "063b1ee4-61e2-4ead-8420-58d87d1096df",
             "region": "eu-west-1"
           }
         ]
